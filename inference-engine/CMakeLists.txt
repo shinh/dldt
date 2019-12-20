@@ -47,10 +47,10 @@ add_subdirectory(thirdparty)
 
 add_subdirectory(tools)
 
-if (ENABLE_SAMPLES)
+#if (ENABLE_SAMPLES)
     # hint for find_package(InferenceEngine in the samples folder)
     set(InferenceEngine_DIR "${CMAKE_BINARY_DIR}")
-endif()
+#endif()
 
 # gflags and format_reader targets are kept inside of samples directory and
 # they must be built even if samples build is disabled (required for tests and tools).
